@@ -1,0 +1,62 @@
+(export (version D)
+  (design
+    (source /home/jjl/sources/fablab-lannion/Soud-Bihan/sheriff/Soud-Bihan.sch)
+    (date "lun. 28 sept. 2015 21:58:58 CEST")
+    (tool "Eeschema (2015-09-12 BZR 6188)-product")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source Soud-Bihan.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref D1)
+      (value LED)
+      (footprint LEDs:LED-5MM)
+      (libsource (lib device) (part LED))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 56096945))
+    (comp (ref BT1)
+      (value Battery)
+      (footprint CR2032:CR2032)
+      (libsource (lib device) (part Battery))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 56096A05)))
+  (libparts
+    (libpart (lib device) (part LED)
+      (footprints
+        (fp LED-3MM)
+        (fp LED-5MM)
+        (fp LED-10MM)
+        (fp LED-0603)
+        (fp LED-0805)
+        (fp LED-1206)
+        (fp LEDV))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED))
+      (pins
+        (pin (num 1) (name K) (type passive))
+        (pin (num 2) (name A) (type passive))))
+    (libpart (lib device) (part Battery)
+      (fields
+        (field (name Reference) BT)
+        (field (name Value) Battery))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive)))))
+  (libraries
+    (library (logical device)
+      (uri /home/jjl/opt/kicad/share/kicad/library/device.lib)))
+  (nets
+    (net (code 1) (name "Net-(BT1-Pad2)")
+      (node (ref D1) (pin 1))
+      (node (ref BT1) (pin 2)))
+    (net (code 2) (name "Net-(BT1-Pad1)")
+      (node (ref D1) (pin 2))
+      (node (ref BT1) (pin 1)))))
