@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Design_Slice_Print</title>
+
+		<link rel="stylesheet" href="./reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="./reveal.js/dist/theme/white.css" id="theme">
+		<link rel="stylesheet" href="./reveal.js/plugin/highlight/monokai.css">
+
+		<!-- Theme used for Fablab -->
+		<link rel="stylesheet" href="./assets/fablab.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="./assets/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? './reveal.js/css/print/pdf.css' : './reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					association KerNEL
+					# Fablab Lannion
+					## Formation
+					### Domotique et consommation d'énergie: Comment suivre sa consommation pour mieux gérer son énergie.
+					25/02/2026
+				</section>
+				<section data-markdown>
+					### Ce que nous verrons pendant les deux prochaines heures
+					
+					- Démystification de la domotique et principe de base
+					- Plein d'exemples de capteurs et dispositifs dans le domaine de la domotique
+					- Comment suivre sa consommation d'énergie à l'aide de dispositifs connectés
+					- Comment analyser sa consommation d'énergie pour éclairer ses décisions
+				</section>
+
+							
+				<section data-markdown="Panorama.md"
+							data-separator="^---"
+							data-separator-vertical="^____"
+							data-separator-notes="^Note:"
+							data-charset="utf-8">
+				</section>
+
+				<section data-markdown="Dispositifs.md"
+							data-separator="^---"
+							data-separator-vertical="^____"
+							data-separator-notes="^Note:"
+							data-charset="utf-8">
+				</section>
+				
+				<section data-markdown="Mesure.md"
+							data-separator="^---"
+							data-separator-vertical="^____"
+							data-separator-notes="^Note:"
+							data-charset="utf-8">
+				</section>
+				
+				<section data-markdown="Analyse.md"
+							data-separator="^---"
+							data-separator-vertical="^____"
+							data-separator-notes="^Note:"
+							data-charset="utf-8">
+				</section>
+				
+				<section data-markdown>
+				Le fablab est un lieu d'échange et de partage, n'hésitez pas à poser vos questions ou à partager vos expériences en matière de domotique et de consommation d'énergie.
+				
+				Florian prévoit un cycle sur l'installation de dispositifs connectés à la maison, n'hésitez pas à lui faire part de vos besoins ou de vos idées pour les prochaines formations.
+				</section>
+
+			</div>
+
+		    <div class='footer'>
+				 <img src="./assets/logo-fablab.jpg" alt="Fablab">
+	        </div>
+		</div>
+
+
+		<script src="./reveal.js/dist/reveal.js"></script>
+        <script src="./reveal.js/plugin/markdown/markdown.js"></script>
+        <script src="./reveal.js/plugin/highlight/highlight.js"></script>
+        <script src="./reveal.js/plugin/notes/notes.js"></script>
+        <script src="./reveal.js/plugin/math/math.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+
+		</script>
+
+	</body>
+</html>
