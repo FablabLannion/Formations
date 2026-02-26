@@ -13,3 +13,5 @@ _autosave-*
 
 ### kdevelop ###
 *kdev4
+.trunk
+.ansible
